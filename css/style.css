@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+
+a{
+    float: left;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #22702F;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.initial{
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2a5d9f2f-5abe-47cf-85cb-de5b288247b1/ddrcsbx-f909d748-1992-4368-a497-a3c0fd27be8d.jpg/v1/fill/w_1138,h_702,q_70,strp/coco_eating_with_pokemon_by_yingcartoonman_ddrcsbx-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNTM2IiwicGF0aCI6IlwvZlwvMmE1ZDlmMmYtNWFiZS00N2NmLTg1Y2ItZGU1YjI4ODI0N2IxXC9kZHJjc2J4LWY5MDlkNzQ4LTE5OTItNDM2OC1hNDk3LWEzYzBmZDI3YmU4ZC5qcGciLCJ3aWR0aCI6Ijw9MjQ5MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.RU3vH1ucsBN9dEZqH6u3doY7pdnaj8iRX8OV_b82oDo);
+    background-size: 100%;
+    background-position: center;
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.list{
+    background: white;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    z-index: 2;
+}
+
+.legal-links, .legal-license{
+    padding: 8px;
+}
+
+.legal-links{
+    margin-right: 10px;
+    float: right;
+    text-decoration:none;
+    color: white;
+}
+
+.legal-license{
+    margin-left: 20px;
+    float: left;
+}
+
+.procurar{
+    float: right;
+}
+
+.pure-menu{
+    background: #1A1717;
+    padding: 10px;
+    height: 10%;
+}
+
+.pure-menu a{
+    color: white;
+}
+
+.pure-menu a:hover{
+    color: black;
+}
+
+.titlePage{
+    font-size: 400%;
+    text-align: center;
+    color: white;
+}
+
+.titleList{
+    text-align: center;
+}

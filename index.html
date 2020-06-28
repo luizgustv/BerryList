@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+
+    <title>Info Berries</title>
+</head>
+
+<body>
+
+    <div class="initial">
+
+        <div class="pure-menu pure-menu-horizontal">
+            <div>
+
+                <a href="https://fontmeme.com/fontes/fonte-pokmon/%22/">
+                    <img src="https://fontmeme.com/permalink/200628/7c5431ad7bf4a7f6d12c8f2b6b1502f7.png" alt="%22" border="0">
+                </a>
+                <a href="index.html" class="pure-menu-heading pure-menu-link">Home</a>
+            </div>
+            <div class="procurar">
+                <form class="pure-form" onsubmit="s.procurar(event)">
+                    <input type="text" id="search" placeholder="ex: cherry" />
+                    <button type="submit" class="pure-button">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <h1 class="titlePage">WikiBerries</h1>
+
+    </div>
+
+    <div class="list">
+        <h1 class="titleList">Berries</h1>
+        <p>Berries have a variety of uses. These berries can all be used and crushed in order to make other items, PokéBlocks
+            & Poffin that are used to boost your Pokémon's Contest statistics. In addition to that, some berries have in-battle
+            effects such as healing Pokémon and some even reduce the Effort Values your Pokémon have gained. Berries can
+            be given to your Pokémon to be held and can be reproduced by growing them in loamy soil around the regions or
+            in the Berry Pots item. All berries however are one-use so use them wisely.</p>
+        <div id="berryView"></div>
+    </div>
+
+    <footer>
+        <div class="legal-license">
+            <p>Built by Luiz Gustavo</p>
+        </div>
+        <div class="legal-links">
+            <a href="https://github.com/luizgustv">
+                <p>GitHub Project</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/models/Berry.js"></script>
+    <script src="js/models/ListBerries.js"></script>
+    <script src="js/controlers/BerryController.js"></script>
+    <script src="js/views/BerryView.js"></script>
+    <script src="js/services/HttpService.js"></script>
+    <script src="js/services/BerryService.js"></script>
+
+    <script>
+        let b = new BerryController();
+    </script>
+
+</body>
+
+</html>
