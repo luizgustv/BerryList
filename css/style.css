@@ -33,12 +33,18 @@ footer{
     z-index: 1;
 }
 
+
 .list{
     background: white;
     position: absolute;
     top: 80%;
     width: 100%;
     z-index: 2;
+}
+
+.legal-links a{
+    text-decoration: none;
+    color: white;
 }
 
 .legal-links, .legal-license{
@@ -48,13 +54,20 @@ footer{
 .legal-links{
     margin-right: 10px;
     float: right;
-    text-decoration:none;
     color: white;
+}
+
+.legal-links, p{
+    text-decoration:none;
 }
 
 .legal-license{
     margin-left: 20px;
     float: left;
+}
+
+.list p{
+    margin-left: 10px;
 }
 
 .procurar{
@@ -75,12 +88,17 @@ footer{
     color: black;
 }
 
-.titlePage{
-    font-size: 400%;
+.titlePage, .titleList{
+    text-align: center;
+}
+
+h2{
     text-align: center;
     color: white;
 }
 
-.titleList{
+.titlePage{
+    font-size: 400%;
     text-align: center;
+    color: white;
 }

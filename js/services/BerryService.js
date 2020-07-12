@@ -1,5 +1,6 @@
 //atualmente a requisição só retorna 64 mas hoje existem 73 tipos de berries
 const _url = 'https://pokeapi.co/api/v2/berry?limit=200';
+const _urlBerry = 'https://pokeapi.co/api/v2/berry';
 
 class BerryService{
 
@@ -8,7 +9,7 @@ class BerryService{
     }
 
     //obter a url correspondente de cada berry
-    obterBerrieUrl(){
+    obterBerrieListUrl(){
         return new Promise((resolve, reject) =>{
             this._http
                 .get(_url)
@@ -23,7 +24,7 @@ class BerryService{
     }
 
     //acessar a url de cada berry e obter sua url de item
-    obterBerry(url){
+    obterItemBerryUrl(url){
         return new Promise((resolve, reject) =>{
             this._http
                 .get(url)
@@ -38,7 +39,7 @@ class BerryService{
     }
 
     //acessar a lista de item e obter os dados de figura, nome e efeito de cada berry
-    obterItemBerry(url){
+    obterBerryItemInfo(url){
         return new Promise((resolve, reject) =>{
             this._http
                 .get(url)
@@ -52,4 +53,7 @@ class BerryService{
                     });
         });
     }
+
+
+
 }

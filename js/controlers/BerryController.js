@@ -20,14 +20,14 @@ class BerryController {
     _init() {
 
         this._service
-            .obterBerrieUrl()
+            .obterBerrieListUrl()
                 .then(lista => lista.forEach(berry =>{
                     //console.log(berry);
                     this._service
-                        .obterBerry(berry)
+                        .obterItemBerryUrl(berry)
                             .then(berry => {
                                 this._service
-                                    .obterItemBerry(berry)
+                                    .obterBerryItemInfo(berry)
                                         .then(berry => {
                                             //console.log(berry);
                                             this._listBerries.adicionar(berry);
@@ -39,7 +39,6 @@ class BerryController {
                 .catch(error => console.log(error));
 
     }
-
 
 
     procurar(event) {
